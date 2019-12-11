@@ -1,14 +1,17 @@
-const players = ['sachin','dravid','virat','ABD']
-console.log(players[0])
-console.log(players[3])
+let n1=10
+let a1=n1
 
-const mixedArray = ['sachin', true,undefined,NaN,Infinity,[1,2,3],56.965]
-console.log(mixedArray[4])
+console.log(n1,a1)//10 10 
+n1=30
+console.log(n1,a1)//20 10 
+a1=20
+console.log(n1,a1)//20 30
 
-const p1='sachin',p2='dravid',p3='azhar',p4='yuvraj'
-console.log(p1)
-console.log(p2)
 
-console.log(typeof players)
-console.log(Array.isArray(players))
-
+let num1=[10,20]
+let arr1=num1
+console.log(num1,arr1)//[ 10, 20 ] [ 10, 20 ]
+num1.push(30)
+console.log(num1,arr1)//[ 10, 20, 30 ] [ 10, 20, 30 ]
+arr1.push(40)
+console.log(num1,arr1)//[ 10, 20, 30, 40 ] [ 10, 20, 30, 40 ]
