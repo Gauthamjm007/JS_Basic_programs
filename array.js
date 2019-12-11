@@ -1,17 +1,20 @@
-let n1=10
-let a1=n1
-
-console.log(n1,a1)//10 10 
-n1=30
-console.log(n1,a1)//20 10 
-a1=20
-console.log(n1,a1)//20 30
+const fruits = ['mango','apple','watermelon']
+console.log(fruits)//[ 'mango', 'apple', 'watermelon' ]
+//add elements at a certain index
+console.log(fruits.splice(2,0,'kiwi','chikoo'))//returns []
+console.log(fruits)//['mango', 'apple', 'kiwi', 'watermelon' ]
 
 
-let num1=[10,20]
-let arr1=num1
-console.log(num1,arr1)//[ 10, 20 ] [ 10, 20 ]
-num1.push(30)
-console.log(num1,arr1)//[ 10, 20, 30 ] [ 10, 20, 30 ]
-arr1.push(40)
-console.log(num1,arr1)//[ 10, 20, 30, 40 ] [ 10, 20, 30, 40 ]
+//remove player at a certain index
+const players = ['sachin','dhoni','virat','shivam']
+console.log(players)//['sachin','dhoni','virat','shivam']
+console.log(players.splice(2,1,'moni'))//returns [virat]
+console.log(players)//['sachin','dhoni','shivam']
+
+const n1=[10,20],n2=[30,40]
+console.log(n1+n2)//10,2030,40
+
+//add 2 arrays 
+// reuturns a new array
+console.log(n1.concat(n2))//[10,20,30,40]
+console.log(n1)//[10,20]
