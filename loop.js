@@ -1,39 +1,35 @@
-let fruits = ['apple','mango','kiwi']
-
-
-
-//for loop
-for( let i=0;i<fruits.length;i++){
-    
-    console.log(fruits[i])
+const player={
+    firstName:'Virat',
+    lastName:'Kholi',
+    country:'India'
 }
 
-//for/of loop -es6
-console.log('for of')
-for( const c of fruits){
-    
-    console.log(c)
+console.log(player.firstName)//'Virat'
+console.log(player['firstName'])//'Virat'
+
+const prop='firstName'
+
+console.log(player.prop)// undefined
+console.log(player[prop])//'Virat' ?? player['firstName]
+
+for(const key in player){
+    console.log(key,player[key])
 }
 
-// forEach loop
-fruits.forEach(function alpha(a,i,fru){
-       
-       
-       console.log(a,i,fru)//we get the elements
-       /*
 
-       output:
-       apple 0 apple
-       mango 1 mango
-       kiwi  2 kiwi
-       
-       */
-      console.log(fru[i].charAt(0).repeat((i+1)*10))
+
+/* Output:
+firstName Virat
+lastName Kholi
+country India
+*/ 
+
+//forEach on objects
+Object.keys(player).forEach(function(key,i,arr){
+    console.log(player[key],i,arr)
 })
 
 
-//console.log(alpha())
-//console.log(alpha('abcd',2,[1,2,3]))
 
-
+console.log(Object.keys(player).length)
 
