@@ -1,28 +1,19 @@
-const city='banglore'
-console.log(city.indexOf('a',3))
+let str='This is a string'
+let num=100e23
+let arr1=[10,20,30,40,50]
+let arr2=[60,70,80,90,100]
+let _symbol=Symbol(num)
+let obj={
+    num:123,
+    str:'this is a string inside an object',
+    fun:(function () {
+        return 'This is a function'
+    })
+}
 
+const minus=(a=>-a)
+let _array=[null,true,false,Infinity,-Infinity,{},'',this,100,100e1,0,arguments,function add(){return 'this is a function'},minus(-10),String,Boolean,Number,Object,Array,Symbol,BigInt]
 
-console.log(city.lastIndexOf('g'))
-
-const phrase = 'javascript is awesome'
-console.log(phrase.indexOf('is'))
-
-console.log(city.includes('a'))
-console.log(city.includes('x'))
-
-console.log(city.indexOf('x')>=0)//false
-console.log(city.indexOf('a')>=0)//true
-
-const languages = 'js,ruby,python,swift'
-let newStr=languages.split(',')
-console.log(newStr)//[js,ruby,python,swift]
-console.log(languages.split(''))//
-
-console.log(languages.search('swift'))
-console.log(languages.repeat(1))
-
-console.log(city.substring(1,3))
-
- 
-console.log(languages.replace('js','react-js'))
+console.log(str.split())
+console.log(str)
 
