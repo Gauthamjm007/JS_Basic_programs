@@ -10,7 +10,11 @@ For example, when an array is passed like [19, 5, 42, 2, 77], the output should 
 function sumTwoSmallestNumbers(numbers) {
 
     numbers.sort((a, b) => a - b)
-    console.log(numbers)
+    return numbers
 }
 
 console.log(sumTwoSmallestNumbers([19, 5, 42, 2, 77]))
+
+
+let num = [1, 5, 8, 2, 7, 2, 1]
+console.log(num.sort())
